@@ -41,9 +41,10 @@ const Navbar = () => {
           />
         </div>
 
-        <div>basket</div>
+        <div>hello</div>
       </form>
     </div>
+    
   );
 };
 
