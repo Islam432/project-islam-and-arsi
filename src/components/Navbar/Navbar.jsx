@@ -41,10 +41,10 @@ const Navbar = () => {
           />
         </div>
 
-        <div>hello</div>
+        <div>helo</div>
       </form>
     </div>
-    
+
   );
 };
 
