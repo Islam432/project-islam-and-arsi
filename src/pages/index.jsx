@@ -12,6 +12,9 @@ export default function Home() {
    
         <div className={styles.cont}>
           <div className={styles.blok1}></div>
+
+
+          
         </div>
       
     
