@@ -1,0 +1,13 @@
+.dash {
+    /* max-width: 1300px; */
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(300px,auto);
+    color: #000000;
+    
+}
+.one{
+    border: 1px solid black;
+}
