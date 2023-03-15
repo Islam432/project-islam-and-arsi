@@ -10,7 +10,9 @@ const Navbar = () => {
     <div className={styles.cont}>
       <form className={styles.allnav}>
         <div className={styles.logo}>
-          <Image className={styles.logoimg} src={logo} alt=""></Image>{" "}
+     
+            <Image className={styles.img} src={logo} alt=""></Image>{" "}
+      
           <h1>Organick</h1>
         </div>
 
@@ -44,7 +46,6 @@ const Navbar = () => {
         <div>helo</div>
       </form>
     </div>
-
   );
 };
 
