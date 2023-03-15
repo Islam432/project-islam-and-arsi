@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { FaArrowRight } from "react-icons/fa";
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -20,6 +22,15 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+<div className={styles.blok2}>
+  <div className={styles.cont2}>
+    <div className={styles.minblok2}></div>
+    <div className={styles.minblok3}></div>
+  </div>
+</div>
+
+
       </div>
     </>
   );

@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "./Navbar.module.css";
 import { FaSearch } from "react-icons/fa";
 import logo from "./logologo.png";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -43,7 +44,7 @@ const Navbar = () => {
           />
         </div>
 
-        <div>helo</div>
+        <div className={styles.basket}><i className={styles.iconbasket}><AiOutlineShoppingCart/></i></div>
       </form>
     </div>
   );

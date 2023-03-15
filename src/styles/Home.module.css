@@ -1,4 +1,5 @@
 .cont {
+    box-sizing: border-box;
   margin: 0;
 }
 .blok1 {
@@ -42,7 +43,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+cursor: pointer;
   width: 200px;
   height: 70px;
   background: #efd372;
@@ -71,3 +72,26 @@
   background: #335b6b;
   color: white;
 }
+
+.blok2{
+    display: flex;
+    
+    width: 100%;
+   justify-content: center;
+    height: 60vh;
+    margin: 0;
+  
+    border: 1px solid black;
+}
+
+.cont2{
+    padding: 10px;
+    width: 90%;
+    border: 1px solid red;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+  
