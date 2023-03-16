@@ -1,5 +1,5 @@
 .cont {
-    box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 .blok1 {
@@ -23,7 +23,7 @@
 }
 .textblok {
   margin-left: 150px;
-  width: 400px;
+  max-width: 400px;
   flex-direction: column;
   display: flex;
   margin-top: 170px;
@@ -35,15 +35,15 @@
   font-style: normal;
   font-weight: 800;
   color: #274c5b;
-  font-size: 60px;
+  font-size: clamp(15px, 2.4vw, 101px);
 }
 
 .button1 {
-  margin-top: 70px;
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-cursor: pointer;
+  cursor: pointer;
   width: 200px;
   height: 70px;
   background: #efd372;
@@ -73,25 +73,59 @@ cursor: pointer;
   color: white;
 }
 
-.blok2{
-    display: flex;
-    
-    width: 100%;
-   justify-content: center;
-    height: 60vh;
-    margin: 0;
-  
-    border: 1px solid black;
+.blok2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+  gap: 30px;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+.texblok1{
+color: white;
+}
+.texblok2{
+color: #7EB693;
 }
 
-.cont2{
-    padding: 10px;
-    width: 90%;
-    border: 1px solid red;
-
-display: flex;
-align-items: center;
-justify-content: center;
+.titleblok1{
+  color:white ;
+}
+.titleblok2{
+  color:#274C5B ;
 }
 
-  
+.minblok2 {
+  width: 400px;
+  position: relative;
+}
+.minblok2 h3 {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  font-family: "Yellowtail";
+  font-weight: 400;
+
+  font-style: normal;
+}
+.minblok2 p {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  font-family: "Roboto";
+  font-weight: 800;
+  font-size: 30px;
+  width: 189px;
+  font-style: normal;
+}
+.img1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+@media (max-width: 700px) {
+  .blok2 {
+    flex-direction: column-reverse;
+  }}

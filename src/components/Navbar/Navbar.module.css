@@ -84,7 +84,7 @@ height:
 .input:not(:placeholder-shown) {
   border-radius: 1200px;
 
-  width: 200px;
+  width: 250px;
   transition: all 0.8s ease-out;
   box-shadow: 0px 0px 20px rgb(151, 248, 255);
 }
@@ -111,7 +111,7 @@ height:
 }
 .icon:hover {
   cursor: pointer;
-  border: 1px solid black;
+
   color: rgb(144, 9, 94);
   border-radius: 45px;
 }
