@@ -17,6 +17,15 @@
     
 }
 
+.dash h1 {
+    color: rgba(39, 76, 91, 1);
+}
+
+.dash h5 {
+    color: rgba(82, 92, 96, 1);
+
+}
+
 .three{
     border-left:1px solid black;
     text-align: left;
@@ -55,7 +64,7 @@ align-items: center;
 }
 
 .Fap:nth-child(1):hover{
-    color: #b300ff;
+    color: #bc1fff;
 }
 .Fap:nth-child(2):hover{
     color: #3532e6;
@@ -64,5 +73,27 @@ align-items: center;
     color: #00acee;
 }
 .Fap:nth-child(4):hover{
-    color: #be0101;
+    color: #d42525;
+}
+
+
+.logo {
+    width: 30px;
+    height: 40px;
+    padding-bottom:-30px;
+}
+
+.basment {
+    /* position: fixed;
+    left: 0; bottom: 0; */
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+    
+}
+
+.empty {
+    margin-top: 60px;
+    border-top:1px solid black;
 }
