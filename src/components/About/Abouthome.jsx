@@ -1,4 +1,5 @@
 import React from "react";
+import About from './../../pages/About/index';
 
 
 const Abouthome = ()=>{
@@ -9,4 +10,8 @@ const Abouthome = ()=>{
 
     )
 }
+
 export default Abouthome
+
+
+
