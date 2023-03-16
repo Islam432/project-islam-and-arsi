@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "./Navbar.module.css";
 import { FaSearch } from "react-icons/fa";
 import logo from "./logologo.png";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -10,7 +11,9 @@ const Navbar = () => {
     <div className={styles.cont}>
       <form className={styles.allnav}>
         <div className={styles.logo}>
-          <Image className={styles.logoimg} src={logo} alt=""></Image>{" "}
+     
+            <Image className={styles.img} src={logo} alt=""></Image>{" "}
+      
           <h1>Organick</h1>
         </div>
 
@@ -41,10 +44,9 @@ const Navbar = () => {
           />
         </div>
 
-        <div>hello</div>
+        <div className={styles.basket}><i className={styles.iconbasket}><AiOutlineShoppingCart/></i></div>
       </form>
     </div>
-    
   );
 };
 

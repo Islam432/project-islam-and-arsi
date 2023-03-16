@@ -1,14 +1,97 @@
-.cont{
-    margin: 0;
-
-   
- 
+.cont {
+    box-sizing: border-box;
+  margin: 0;
 }
-.blok1{
-    background-image: url('./Banner.jpg');
+.blok1 {
+  display: flex;
+  background-image: url("./Banner.jpg");
   width: 100%;
- object-fit: cover;
-min-height: 100vh;
-background-repeat: no-repeat;
-    background-size: 100% ;
+  object-fit: cover;
+  height: 100vh;
+  margin: 0;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+.tx1 {
+  color: #68a47f;
+  font-family: "Yellowtail";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0;
+}
+.textblok {
+  margin-left: 150px;
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+  margin-top: 170px;
+}
+
+.textblok h1 {
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  color: #274c5b;
+  font-size: 60px;
+}
+
+.button1 {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+cursor: pointer;
+  width: 200px;
+  height: 70px;
+  background: #efd372;
+  border-radius: 16px;
+
+  gap: 5px;
+}
+.button1 h3 {
+  padding-left: 10px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  color: #274c5b;
+}
+.arrovicon {
+  width: 20px;
+  font-weight: 400;
+  height: 20px;
+  border-radius: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  background: #335b6b;
+  color: white;
+}
+
+.blok2{
+    display: flex;
+    
+    width: 100%;
+   justify-content: center;
+    height: 60vh;
+    margin: 0;
+  
+    border: 1px solid black;
+}
+
+.cont2{
+    padding: 10px;
+    width: 90%;
+    border: 1px solid red;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+  

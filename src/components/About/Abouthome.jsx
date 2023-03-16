@@ -1,7 +1,8 @@
 import React from "react";
+import About from './../../pages/About/index';
 
 
-const Div1 = ()=>{
+const Abouthome = ()=>{
     return (
         <div className={styles.goodjob}>
 
@@ -9,3 +10,4 @@ const Div1 = ()=>{
 
     )
 }
+export default  Abouthome
