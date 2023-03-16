@@ -11,14 +11,7 @@ export default function Home() {
   return (
     <>
    
-        <div className={styles.cont}>
-          <div className={styles.blok1}></div>
-
-
-          
-        </div>
-      
-    
+   
     
     </>
   )
