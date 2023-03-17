@@ -1,13 +1,14 @@
-
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { FaArrowRight } from "react-icons/fa";
+import photo from '../styles/ImgHome/photoblok1.jpg'
+import photo2 from '../styles/ImgHome/photoblok2.jpg'
+import Abouthome from "../components/About/Abouthome";
 
-import Abouthome from '../components/About/Abouthome'
-
-
+import cn from "clsx"
+import Shop from "@/components/Shop_home/Shop";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,7 +16,6 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-
       <div className={styles.cont}>
         <div className={styles.blok1}>
           <div className={styles.textblok}>
@@ -27,23 +27,25 @@ export default function Home() {
               <div className={styles.arrovicon}> {<FaArrowRight />}</div>
             </div>
           </div>
-
-   
-      
-
-
-          
-
         </div>
 
         <div className={styles.blok2}>
-          <header className={styles.cont2}>
+         
             <div className={styles.minblok2}>
+              <h3 className={styles.texblok1}>Natural!!</h3>
+              <p className={styles.titleblok1}>Get Garden Fresh Fruits</p>
+              <Image alt="" className={styles.img1} src={photo}/>
               
             </div>
-            <div className={styles.minblok3}></div>
-          </header>
+            <div className={styles.minblok2}>
+            <h3 className={styles.texblok2}>Offer!!</h3>
+              <p className={styles.titleblok2}>Get 10% off on Vegetables</p>
+              <Image alt="" className={styles.img1} src={photo2}/></div>
+          
         </div>
+<Shop/>
+
+
       </div>
     </>
   );
