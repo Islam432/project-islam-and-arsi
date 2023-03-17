@@ -17,6 +17,7 @@ const Shop = () => {
          <Cardblok/> 
          <Cardblok/> 
          <Cardblok/> 
+       
     
        
     </div>
