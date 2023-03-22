@@ -9,44 +9,47 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <div className={styles.cont}>
-      <form className={styles.allnav}>
-        <div className={styles.logo}>
-     
-            <Image className={styles.img} src={logo} alt=""></Image>{" "}
-      
-          <h1>Organick</h1>
-        </div>
+    <div className={styles.navbar}>
+    <div className={styles.logo}>
+   
+   <Image className={styles.img} src={logo} alt=""></Image>
 
-        <div className={styles.navbar}>
-          <Link href={"/"} className={styles.NavLink}>
-            <h3>home</h3>
-          </Link>
-          <Link href={"/About"} className={styles.NavLink}>
-            <h3>Navbar</h3>
-          </Link>
-          <Link href={"/comp"} className={styles.NavLink}>
-            <h3>Navbar</h3>
-          </Link>
-          <Link href={"/comp"} className={styles.NavLink}>
-            <h3>Navbar</h3>
-          </Link>
-        </div>
+ <h1>Organick</h1>
+</div>
+      <nav className={styles.nav}>
+        <Link href={"/"} className={styles.NavLink}>
+          <h3>home</h3>
+        </Link>
+        <Link href={"/About"} className={styles.NavLink}>
+          <h3>Navbar</h3>
+        </Link>
+        <Link href={"/comp"} className={styles.NavLink}>
+          <h3>Navbar</h3>
+        </Link>
+        <Link href={"/comp"} className={styles.NavLink}>
+          <h3>Navbar</h3>
+        </Link>
+      </nav>
 
-        <div className={styles.inputblok}>
-          <label htmlFor="search" className={styles.icon}>
-            {<FaSearch />}
-          </label>
-          <input
-            className={styles.input}
-            type="text"
-            id="search"
-            placeholder="search"
-          />
-        </div>
-
-        <div className={styles.basket}><i className={styles.iconbasket}><AiOutlineShoppingCart/></i></div>
+      <form className={styles.inputblok}>
+        <label htmlFor="search" className={styles.icon}>
+          {<FaSearch />}
+        </label>
+        <input
+          className={styles.input}
+          type="text"
+          id="search"
+          placeholder="search"
+        />
       </form>
+
+      <div className={styles.basket}>
+        <i className={styles.iconbasket}>
+          <AiOutlineShoppingCart />
+        </i>
+      </div>
     </div>
+  </div>
   );
 };
 

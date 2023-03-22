@@ -1,8 +1,11 @@
+import Heder from '@/components/AboutListener/Heder/Heder'
 import React from 'react'
 
 const About = () => {
   return (
-    <div>index</div>
+    <Heder/>
+    
+
   )
 }
 

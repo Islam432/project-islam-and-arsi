@@ -1,0 +1,110 @@
+.cont{
+    max-width: 100%;
+    margin: 0;
+      padding: 0;
+        
+}
+.banner{
+    border: 0.1px solid #f1eff0;
+
+    background-repeat: no-repeat repeat-x;
+    background: 
+    #274C5B;
+    background-size: cover;
+    height: 1050px;
+    opacity: 90%;
+    
+}
+.blok1{
+
+    max-width: 100%;
+margin: 150px auto;
+
+text-align: center;
+
+padding: 50px;
+
+}
+.minblok{
+ 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1100px;
+  }
+  .minbloktitle{
+    text-align: start;
+  
+  }
+   .minbloktitle h2{
+    font-family: 
+    Yellowtail;
+    font-weight: 400;
+    color: 
+    #7EB693;
+    font-size: clamp(20px, 3vw ,29px);
+   }   
+   .minbloktitle p{
+    margin-top: 20px;
+  font-family: roboto;
+font-style: SemiBold;
+font-weight: 800;
+font-size: clamp(18px , 3vw, 40px);
+color: white;
+   }   
+
+   .ButtonCatalog{
+    
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 200px;
+    height: 70px;
+    background: #EFD372;
+    border-radius: 16px;
+
+  
+    gap: 5px;
+}
+.htext{
+    padding-left: 10px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: clamp(10px,2vw,20px);
+    color: 
+    #274C5B;
+  }
+.arrovicon {
+    width: 20px;
+    font-weight: 400;
+    height: 20px;
+    border-radius: 100px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    background: #335b6b;
+    color: white;
+  }.minblok2{
+
+    max-width: 1300px;
+    padding: 15px;
+    margin: 40px auto;
+    display: flex;
+    
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid black;
+}
+@media(max-width:600px){
+    .ButtonCatalog{
+        width: 150px;
+        height: 50px;
+    }
+}

@@ -8,8 +8,8 @@ import styles from './index.module.css'
 const Layout = ({children}) => {
   return (
     <div>
-        <Navbar></Navbar>
-        <div>{children}</div>
+        <Navbar/>
+        <div className={styles.div}>{children}</div>
         <Footer></Footer>
 
         

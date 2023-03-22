@@ -9,6 +9,9 @@ import Abouthome from "../components/About/Abouthome";
 
 import cn from "clsx"
 import Shop from "@/components/Shop_home/Shop";
+import Stata from "@/components/Stata_home/Stata";
+import ForYouHome from "@/components/ForYouHome/ForYouHome";
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,19 +20,22 @@ export default function Home() {
   return (
     <>
       <div className={styles.cont}>
-        <div className={styles.blok1}>
+      <div className={styles.banner}>
+       <div className={styles.titleobert}>
+          
           <div className={styles.textblok}>
             <h3 className={styles.tx1}>100% Natural Food</h3>
-            <h1>Choose the best healthier way of life</h1>
-
+             <h1 className={styles.title1}>Choose the best healthier way of life</h1>
+  
             <div className={styles.button1}>
               <h3>Explore Now</h3>
               <div className={styles.arrovicon}> {<FaArrowRight />}</div>
             </div>
           </div>
-        </div>
+       </div>
+      </div>
 
-        <div className={styles.blok2}>
+         <div className={styles.blok2}>
          
             <div className={styles.minblok2}>
               <h3 className={styles.texblok1}>Natural!!</h3>
@@ -44,7 +50,8 @@ export default function Home() {
           
         </div>
 <Shop/>
-
+<Stata/>
+<ForYouHome/> 
 
       </div>
     </>
