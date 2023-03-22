@@ -42,7 +42,7 @@
   height: 250px;
   object-fit: cover;
 }
-.footer_pz {
+.footer {
   border-top: 1px solid black;
   display: flex;
   height: 40px;

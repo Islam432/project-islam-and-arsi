@@ -12,7 +12,7 @@ const Cardblok = () => {
       <header className={styles.minHeder}>text</header>
  <Image alt="" className={styles.imgblok} src={photo}/>
       <h5 className={styles.name}>name</h5>
-      <footer className={styles.footer_pz}>
+      <footer className={styles.footer}>
         <h4 className={styles.price}>price</h4>
         <div className={styles.starblok}>
           {number.map((item) => {
