@@ -1,0 +1,162 @@
+.statacont{
+
+    max-width: 100%;
+margin: 0;
+  padding: 0;
+    
+    
+}
+.banner {
+    border: 0.1px solid #f1eff0;
+    border-bottom: white;
+    background-repeat: no-repeat repeat-x;
+    background: url("./Image.jpg");
+    background-size: cover;
+    height: 988px;
+    opacity: 90%;
+  }
+
+.blok1{
+
+    max-width: 100%;
+margin: 0px auto;
+
+text-align: center;
+padding-top: 80px;
+
+}
+.minblok{
+  
+  margin: 0 auto;
+
+  max-width: 50rem;
+}
+.minblok h4{
+font-family: Open Sans;
+font-style: Regular;
+font-size: 18px;
+color: 
+#525C60;
+}
+.minblok p{
+  font-family: roboto;
+font-style: rxtraBold;
+font-weight: 800;
+font-size: clamp(25px , 3vw, 50px);
+color: #274C5B;
+}
+.minblok h3{
+  margin-top: 20px;
+  font-family: roboto;
+font-style: SemiBold;
+font-weight: 800;
+font-size: clamp(20px , 3vw, 25px);
+color: #274C5B;
+
+
+}
+.minblok h2{
+  margin-top: 5px;
+  font-family: Open Sans;
+font-style: Regular;
+font-weight: 400;
+font-size: 15px ;
+color: #274C5B;
+
+
+
+}
+.minblok h1{
+    
+font-family: 
+Yellowtail;
+font-weight: 400;
+color: 
+#7EB693;
+font-size: clamp(25px, 3vw ,33px);
+}
+
+.statatitle{
+  padding-top: 20px;
+}
+.img1{
+  margin-top: 80px;
+  border-radius: 100px;
+}
+
+.star {
+  margin-top: 20px;
+  color: #ffa858;
+  font-size: 18px;
+}
+.minblok2{
+  margin: 50px auto;
+  display: flex;
+  gap: 20px;
+  max-width: 800px;
+  
+
+
+}
+
+.cercle{
+  padding: 0;
+  margin: 0 auto;
+ width: 169px;
+ height: 169px;
+  border-radius: 100px;
+  background: #F1F1F1;
+  border: 3px solid #7EB693;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.cercle h1{
+  color: 
+  #274C5B;
+  font-family:Roboto ;
+font-style: ExtraBold;
+font-size: clamp(25px , 3vw, 50px);
+font-weight: 700;
+}
+.cercle p{
+  color: 
+  #274C5B;
+  font-family:Open Sans ;
+font-style: Semibold;
+font-size: clamp(12px , 2vw, 18px);
+font-weight: 700;
+
+
+
+}
+@media(max-width: 800px){
+  .cercle{
+    width: 130px;
+    height: 130px;
+  }
+  .minblok2{
+    flex-wrap: wrap;
+ 
+  }
+  }
+@media(max-width: 600px){
+  .cercle{
+    width: 90px;
+    height: 90px;
+  }
+
+  }
+@media(max-width: 400px){
+  .cercle{
+    width: 70px;
+    height: 70px;
+  }
+
+  }
+.polosa{
+  margin-top: 90px;
+  border: 1px solid #E0E0E0;
+}
