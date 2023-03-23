@@ -1,4 +1,5 @@
 .dash {
+    max-width: 100%;
     box-sizing: border-box;
     /* max-width: 1300px; */
     margin: 0 auto;
@@ -7,7 +8,13 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(300px,auto);
     color: #000000;
+    font-size: clamp(10px 2.8vw ,11.7rem);
     
+}
+@media( max-width: 630px){
+   .dash{
+    grid-template-columns: repeat(2, 1fr);
+   }
 }
 .one{
     border-right:1px solid black;
@@ -31,6 +38,12 @@
     text-align: left;
     padding-left: 40px;
 }
+@media( max-width: 630px){
+    .three{
+        display: none;
+    }
+}
+
 
 .icons {
 
@@ -38,6 +51,12 @@
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
     gap: 3rem;;
+}
+@media( max-width: 400px){
+    .icons{
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, 2fr);
+    }
 }
 
 .gridIcon {
@@ -47,7 +66,7 @@
 justify-content: center;
 align-items: center;
   height: 20vh;
-  width: 20vh;
+  max-width: 100%;
   color: rgb(0, 0, 0);
 }
 
@@ -65,6 +84,8 @@ align-items: center;
 
 .Fap:nth-child(1):hover{
     color: #bc1fff;
+    
+   
 }
 .Fap:nth-child(2):hover{
     color: #3532e6;

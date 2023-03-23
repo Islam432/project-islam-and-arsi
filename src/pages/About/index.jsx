@@ -1,7 +1,9 @@
+import Heder from '@/components/AboutListener/Heder/Heder'
 import React from 'react'
 
 const About = () => {
   return (
+
     
     <div className={styles.big-card} style={{ maxWidth: 540 }}>
   <div className={styles.card}>
@@ -23,6 +25,8 @@ been the industrys standard dummy text ever since the 1500s, when an unknown pri
     </div>
   </div>
 </div>
+
+
 
   )
   

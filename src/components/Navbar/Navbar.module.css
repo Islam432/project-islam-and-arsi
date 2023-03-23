@@ -1,42 +1,18 @@
 .cont {
   margin: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 15vh;
-  background: #ffffff;
-}
-.logo {
-  display: flex;
-  align-items: center;
-
-  color: #274c5b;
-  font-size: clamp(10px, 2.5vw, 20px);
-  height: 15vh;
-  gap: 10px;
-}
-.logoimg {
   box-sizing: border-box;
-
-  cursor: pointer;
-}
-
-.img {
-width:
-36.58px;
-height: 
-53.72px;
-}
-
-.allnav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  height: 10vh;
+  max-width: 100%;
 }
 .navbar {
+  box-sizing: border-box;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 13px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -48,20 +24,12 @@ height:
   font-size: 16px;
   color: #274c5b;
 }
-.NavLink {
-  text-decoration: none;
-  color: #274c5b;
-}
-.NavLink h3 {
-  text-decoration: none;
-  color: #274c5b;
-}
 .input {
   font-size: 20px;
   outline: none;
   padding: 5px;
   transition: all 0.5s ease-in, box-shadow 0.6s ease-in;
-  width: 24px;
+  width: 36px;
   cursor: pointer;
 
   border-radius: 100px;
@@ -84,14 +52,17 @@ height:
 .input:not(:placeholder-shown) {
   border-radius: 1200px;
 
-  width: 200px;
+  width: 250px;
   transition: all 0.8s ease-out;
   box-shadow: 0px 0px 20px rgb(151, 248, 255);
 }
-@media (max-width: 800px) {
-  .navbar {
-    display: none;
-  }
+.NavLink {
+  text-decoration: none;
+  color: #274c5b;
+}
+.NavLink h3 {
+  text-decoration: none;
+  color: #274c5b;
 }
 .inputblok {
   position: relative;
@@ -111,26 +82,43 @@ height:
 }
 .icon:hover {
   cursor: pointer;
-  border: 1px solid black;
+
   color: rgb(144, 9, 94);
   border-radius: 45px;
 }
-.iconbasket{
-font-size: 25px;
-margin-top: 5px;
-margin-right: 3px;
-color: white;
+.iconbasket {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-right: 3px;
+  color: white;
 }
-.basket{
-display: flex;
-width: 40px;
-align-items: center;
-justify-content: center;
-height: 40px;
-background: #274C5B;
-border-radius: 100px;
-border: 1px solid black;
-cursor: pointer;
+.basket {
+  display: flex;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background: #274c5b;
+  border-radius: 100px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  align-items: center;
 
+  color: #274c5b;
+  font-size: clamp(10px, 2.5vw, 20px);
+  height: 15vh;
+  gap: 10px;
+}
+.logoimg {
+  box-sizing: border-box;
 
+  cursor: pointer;
+}
+
+.img {
+  width: 36.58px;
+  height: 53.72px;
 }
