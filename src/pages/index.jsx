@@ -17,10 +17,10 @@ import ForYouHome from "@/components/ForYouHome/ForYouHome";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
+  return ( 
     <>
-      <div className={styles.cont}>
-      <div className={styles.banner}>
+    <div className={styles.cont}>
+    <div className={styles.banner}>
        <div className={styles.titleobert}>
           
           <div className={styles.textblok}>
@@ -35,8 +35,14 @@ export default function Home() {
        </div>
       </div>
 
-         <div className={styles.blok2}>
+
+
+        <div className={styles.blok2}>
+
+
+     
          
+
             <div className={styles.minblok2}>
               <h3 className={styles.texblok1}>Natural!!</h3>
               <p className={styles.titleblok1}>Get Garden Fresh Fruits</p>
@@ -49,11 +55,17 @@ export default function Home() {
               <Image alt="" className={styles.img1} src={photo2}/></div>
           
         </div>
-<Shop/>
-<Stata/>
-<ForYouHome/> 
 
-      </div>
+      <  Abouthome/>
+
+       <Shop/>
+        <Stata/>
+       <ForYouHome/> 
+
+
+    </div>
+     
+
     </>
   );
 }
