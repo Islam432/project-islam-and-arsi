@@ -38,6 +38,8 @@ export default function Home() {
             <div className={styles.minblok3}></div>
           </header>
         </div>
+<Abouthome/>
+
       </div>
 
     </>
