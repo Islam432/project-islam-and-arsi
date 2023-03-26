@@ -21,7 +21,7 @@ const Navbar = () => {
           <h3>home</h3>
         </Link>
         <Link href={"/About"} className={styles.NavLink}>
-          <h3>Navbar</h3>
+          <h3>About</h3>
         </Link>
         <Link href={"/comp"} className={styles.NavLink}>
           <h3>Navbar</h3>

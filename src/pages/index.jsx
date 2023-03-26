@@ -11,6 +11,7 @@ import cn from "clsx"
 import Shop from "@/components/Shop_home/Shop";
 import Stata from "@/components/Stata_home/Stata";
 import ForYouHome from "@/components/ForYouHome/ForYouHome";
+import EcoFrendli from "@/components/EcoFrendli/EcoFrendli";
 
 
 
@@ -52,7 +53,7 @@ export default function Home() {
 <Shop/>
 <Stata/>
 <ForYouHome/> 
-
+<EcoFrendli/>
       </div>
     </>
   );
