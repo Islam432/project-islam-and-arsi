@@ -1,0 +1,116 @@
+.cont {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.blok1 {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 1px solid red;
+  height: 90vh;
+}
+.min_blok {
+  width: 50%;
+
+  height: 100%;
+}
+.min_blok2 {
+  width: 50%;
+
+  height: 100%;
+  
+}
+.img1 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+    margin: 70px auto;
+  max-width: 550px;
+  text-align: center;
+  border-radius: 20px;
+  
+  box-shadow: 0px 0px 5px black;
+  
+}
+
+.title{
+color: 
+#65aa7e;
+    padding: 5px;
+    font-family: Yellowtail;
+    font-weight: 400;
+    font-size: clamp(15px, 3vw , 36px);
+}
+
+.title2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    padding: 5px;
+    color: #274C5B;
+    font-size: clamp(18px, 3vw , 50px);
+}
+.title_Blok{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    padding: 5px;
+    color: #274C5B;
+    font-size: clamp(18px, 3vw , 25px);
+}
+
+
+.paragrav{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    padding: 5px;
+    color: #525C60;
+    font-size: clamp(13px, 3vw , 18px);
+}
+
+.base{
+    margin: 10px;
+}
+
+
+
+
+
+
+@media (max-width: 910px) {
+  .min_blok {
+    position: absolute;
+    width: 100%;
+  }
+  .min_blok2 {
+    position: relative;
+    z-index: 100;
+    width: 80%;
+    margin: 0 auto;
+ 
+    opacity: 85%;
+    
+  }
+  .blok1 {
+    min-height: 90vh;
+  }
+  .title_Blok{
+    color: 
+    #845098; 
+   
+  }
+  .paragrav{
+    
+ color: rgb(12, 12, 12);
+  }
+  .card{
+  
+  }
+}

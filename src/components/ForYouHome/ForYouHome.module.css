@@ -12,7 +12,7 @@
     #274C5B;
     background-size: cover;
     height: 1050px;
-    opacity: 90%;
+  
     
 }
 .blok1{
@@ -70,6 +70,11 @@ color: white;
   
     gap: 5px;
 }
+
+   .ButtonCatalog:hover{
+    box-shadow: 0px 0px 10px rgb(255, 127, 219);
+  
+   }
 .htext{
     padding-left: 10px;
     font-family: Roboto;
