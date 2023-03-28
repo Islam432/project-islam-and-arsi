@@ -1,0 +1,135 @@
+.float_layout {
+    padding: 5px 5px;
+    float: left;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .card_container {
+    overflow: hidden;
+    background: rgba(249, 248, 248, 1);
+    ;
+  }
+  
+  .card {
+    color: rgba(39, 76, 91, 1);
+    height: 100%;
+    width: 50%;
+    /* margin-right: 100%; */
+    float: right;
+    /* padding-top: 100px; */
+  }
+  
+  .card_title {
+    font-size: 30px;
+    /* text-align: center; */
+    font-weight: bold;
+  }
+  
+  .card_desc {
+    /* padding: 10px;
+    text-align: left; */
+    font-size: 18px;
+    width: 550px;
+    line-height: 20px;
+  }
+  
+  .card_image img {
+    width: 50%;
+    height: auto;
+  }
+  
+  /* Phone Devices Query */
+  @media only screen and (max-width: 37.5em) {
+    .card_image img {
+      width: 100%;     height: auto;
+    }
+  
+    .card {
+      width: 100%;
+      margin-top: -4px;
+    }
+  }
+
+  .small_card {
+    display: block;
+    align-items: top;
+    /* border: 1px solid black; */
+    /* gap: 10px; */
+  }
+
+.iconblok{
+width: 4.5rem;
+height: 70px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: white;
+border-radius: 10px;
+/* border: 1px solid black; */
+}
+.icon1{
+    color: green;
+    font-size: 30px;
+}
+ /* .small_card p {
+align-items: top;
+ } */
+
+
+ .about {
+    color: rgba(126, 182, 147, 1);
+    margin-bottom: 30px
+    ;
+ }
+ .imgblok{
+    display: flex;
+ }
+ /* .textblok h3 p{
+  padding-top: 10px;
+
+ } */
+
+ .textblok h3 p {
+  margin-top: 90px;
+ }
+
+
+ .textblok {
+  line-height: 10px;
+  gap: 10px;
+ }
+
+ .small_card {
+  gap: 30px;
+ }
+
+
+ .button1 {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+cursor: pointer;
+  width: 200px;
+  height: 70px;
+  background: rgba(39, 76, 91, 1);
+  border-radius: 16px;
+
+  gap: 5px;
+}
+.button1 h3 {
+  padding-left: 10px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.arrovicon {
+  color: #e8e0e0;
+  margin-top: 4px;
+}
