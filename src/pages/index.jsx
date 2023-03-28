@@ -50,9 +50,9 @@ export default function Home() {
               <Image alt="" className={styles.img1} src={photo2}/></div>
           
         </div>
-<Shop/>
+{/* <Shop/>
 <Stata/>
-<ForYouHome/> 
+<ForYouHome/>  */}
 <EcoFrendli/>
       </div>
     </>
