@@ -1,0 +1,16 @@
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr
+}
+
+.first_grid {
+    background-image: url('./one.jpg');
+}
+
+.second_grid {
+    background-image: url('./two.jpg');
+}
+
+.three_grid {
+    background-image: url('./three.jpg');
+}
