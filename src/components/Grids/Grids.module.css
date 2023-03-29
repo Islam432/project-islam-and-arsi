@@ -1,16 +1,50 @@
+
 .grid_container {
     display: grid;
-    grid-template-columns: 1fr,1fr,1fr
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 550px;
+    padding-top: 100px;
+    gap: 30px;
 }
 
 .first_grid {
     background-image: url('./one.jpg');
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+    
 }
 
 .second_grid {
     background-image: url('./two.jpg');
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
 
 .three_grid {
     background-image: url('./three.jpg');
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
+
+.card_button {
+    padding: 20px 50px;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    /* margin: 0 auto;
+    display: block; */
+    /* align-items: center;
+    justify-content: center; */
+   }
+
+   .card_button button {
+    align-items: center;
+    justify-content: center;
+   }

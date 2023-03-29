@@ -13,7 +13,8 @@ export const dataStrapi = () => {
 };
 export const SevenData = () => {
     const query = qs.stringify({
-        page: 1,
+       
+      page: 1,
         pageSize: 8,
     })
     return strapi.get("catalogs?" + query).json();
