@@ -12,9 +12,26 @@ export const dataStrapi = () => {
   return strapi.get("catalogs?" + query).json();
 };
 export const SevenData = () => {
-    const query = qs.stringify({
-        page: 1,
-        pageSize: 8,
-    })
-    return strapi.get("catalogs?" + query).json();
-}
+  const query = qs.stringify({
+    pagination: {
+      page: 1,
+      pageSize: 8,
+    },
+    populate: {
+      Picture: true,
+    },
+  });
+  return strapi.get("catalogs?" + query).json();
+};
+export const ToData = () => {
+  const query = qs.stringify({
+    pagination: {
+      page: 1,
+      pageSize: 12,
+    },
+    populate: {
+      Picture: true,
+    },
+  });
+  return strapi.get("catalogs?" + query).json();
+};
