@@ -53,7 +53,7 @@ const Abouthome = ()=>{
         </div>
 
         <div className={styles.button1}>
-              <h3>Shop Now</h3>
+              <h3>go to About</h3>
               <div className={styles.arrovicon}> {<FaArrowRight />}</div>
             </div>
       </div>

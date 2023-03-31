@@ -18,12 +18,7 @@ const Cardblok = ({name, price,type,img}) => {
           {number.map((item) => {
             return <AiFillStar className={styles.star} key={item.id}/>;
           })}
-          {/* <AiFillStar className={styles.star}/>
-            <AiFillStar className={styles.star}/>
-            <AiFillStar className={styles.star}/>
-            <AiFillStar className={styles.star}/>
-            <AiFillStar className={styles.star}/>
-            */}
+         
         </div>
       </footer>
     </div>

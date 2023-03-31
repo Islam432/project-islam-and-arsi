@@ -32,6 +32,25 @@ export const ToData = () => {
     populate: {
       Picture: true,
     },
+
   });
   return strapi.get("catalogs?" + query).json();
 };
+export const WigData = () => {
+  const query = qs.stringify({
+  
+    filters: {
+      Type: {
+        $eq: 'Vegetable',
+       },
+     },
+
+    populate: {
+      Picture: true,
+    },
+
+
+  });
+  return strapi.get("catalogs?" + query).json();
+};
+
