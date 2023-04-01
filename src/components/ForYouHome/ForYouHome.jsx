@@ -24,14 +24,16 @@ const ForYouHome = () => {
               <h2>Offer</h2>
               <p>We Offer Organic For You</p>
             </div>
-
-            <div className={styles.ButtonCatalog}>
             <Link href={"/Shop"} className={styles.NavLink}>
+            <div className={styles.ButtonCatalog}>
+           
             <h4 className={styles.htext}>go to catalog</h4>
-        </Link>
+    
               
               <div className={styles.arrovicon}> {<FaArrowRight />}</div>
             </div>
+            </Link>
+
           </div>
 
           <div className={styles.minblok2}>

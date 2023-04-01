@@ -11,11 +11,11 @@ export const dataStrapi = () => {
   });
   return strapi.get("catalogs?" + query).json();
 };
-export const SevenData = () => {
+export const SevenData = ({ start = 0, limit = 8 }) => {
   const query = qs.stringify({
     pagination: {
-      page: 1,
-      pageSize: 8,
+      start,
+      limit,
     },
     populate: {
       Picture: true,
@@ -32,25 +32,30 @@ export const ToData = () => {
     populate: {
       Picture: true,
     },
-
   });
   return strapi.get("catalogs?" + query).json();
 };
 export const WigData = () => {
   const query = qs.stringify({
-  
     filters: {
       Type: {
-        $eq: 'Vegetable',
-       },
-     },
+        $eq: "Vegetable",
+      },
+    },
 
     populate: {
       Picture: true,
     },
-
-
   });
   return strapi.get("catalogs?" + query).json();
 };
 
+export const DataPeople = () => {
+  const query = qs.stringify({
+    populate: {
+      image: true,
+    },
+  });
+
+  return strapi.get("peoplee?" + query).json();
+};

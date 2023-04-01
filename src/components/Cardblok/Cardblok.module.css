@@ -23,6 +23,7 @@
   font-family: "Open Sans";
   font-size: 15px;
   font-weight: 600;
+  mix-blend-mode: screen;
 }
 .name {
   position: absolute;

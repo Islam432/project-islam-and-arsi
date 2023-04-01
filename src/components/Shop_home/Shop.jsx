@@ -3,25 +3,31 @@ import Cardblok from "../Cardblok/Cardblok";
 import styles from "./Shop.module.css";
 import Button from "./../Button/Button";
 import { FaArrowRight } from "react-icons/fa";
-import { dataStrapi, SevenData , ToData } from "../Api/restApi";
+import { dataStrapi, SevenData, ToData } from "../Api/restApi";
 import { getImageUrl } from "@/helper/image";
+import Card from "../UI/Card/Card";
 
 const Shop = () => {
+  const { visible, setViseble } = useState(false);
   const [catalog, setcatalog] = useState([]);
+  const [paginate, setPaginate] = useState({ limit: 8, start: 0 });
 
   useEffect(() => {
-    SevenData().then((res) => {
+    SevenData(paginate).then((res) => {
       return setcatalog(res.data);
     });
   }, []);
   console.log(catalog);
 
-const onClick = () => {
-  ToData().then((res) => {
-    return setcatalog(res.data);
-  });
-  
-}
+  const onClick = () => {
+    SevenData({ start: paginate.limit, limit: 4 }).then((res) => {
+      return setcatalog((prev) => [...prev, ...res.data]);
+    });
+    setPaginate((prev) => ({
+      limit: paginate.limit + 4,
+      start: paginate.limit,
+    }));
+  };
 
   return (
     <div className={styles.contshop}>
@@ -32,14 +38,15 @@ const onClick = () => {
         <div className={styles.catalokblok}>
           <div className={styles.catalog}>
             {catalog.map((item) => {
-        
-              return <Cardblok
-                key={item.id}
-                name={item.Name}
-                price={item.Price}
-                type={item.Type}
-                 img={getImageUrl(item.Picture.url)}
-              />;
+              return (
+                <Card
+                  key={item.id}
+                  name={item.Name}
+                  price={item.Price}
+                  type={item.Type}
+                  img={getImageUrl(item.Picture.url)}
+                />
+              );
             })}
           </div>
         </div>
