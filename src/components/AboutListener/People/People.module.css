@@ -1,0 +1,52 @@
+.cont{
+    max-width: 100%;
+
+padding: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border: 1px solid black;
+
+    flex-direction: column;
+}
+.card_blok{
+    flex-wrap: wrap;
+max-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.text_blok{
+    text-align: center;
+margin-bottom: 40px;
+line-height: 30px;
+}
+.title{
+    color: 
+    #7EB693;
+    font-family: 'Yellowtail';
+    font-weight:400 ;
+    font-style: 'Regular';
+    font-size: clamp(18px ,3vw , 36px);
+}
+.title2{
+    color: 
+    #274C5B;
+    font-family: 'Roboto';
+    font-weight:800 ;
+    font-style: 'ReguExtraBoldlar';
+    margin-top: 20px;
+    font-size: clamp(28px ,3vw , 56px);
+}
+.paragrav{
+    margin-top: 40px;
+    line-height: 20px;
+    max-width: 650px;
+    color: 
+    #525C60;
+    font-family: 'Open Sans';
+    font-weight:800 ;
+    font-style: 'Regular';
+    font-size: clamp(12px ,2.5vw , 18px);
+}
