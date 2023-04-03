@@ -23,6 +23,8 @@ const Shop = () => {
     SevenData({ start: paginate.limit, limit: 4 }).then((res) => {
       return setcatalog((prev) => [...prev, ...res.data]);
     });
+    consolea.log(prev)
+  
     setPaginate((prev) => ({
       limit: paginate.limit + 4,
       start: paginate.limit,

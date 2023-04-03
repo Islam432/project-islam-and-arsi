@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "./Navbar.module.css";
 import { FaSearch } from "react-icons/fa";
 import logo from "./logologo.png";
+import cn from 'clsx';
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import Image from "next/image";
 
@@ -24,7 +25,7 @@ const Navbar = () => {
           <h3>About</h3>
         </Link>
         <Link href={"/Shop"} className={styles.NavLink}>
-          <h3>Navbar</h3>
+          <h3>Shop</h3>
         </Link>
         <Link href={"/comp"} className={styles.NavLink}>
           <h3>Navbar</h3>

@@ -1,0 +1,15 @@
+.cont{
+padding-top: 50px;
+padding-bottom: 50px;
+background: rgb(250, 250, 250);
+}
+.catalogs{
+    max-width: 1300px;
+    padding: 15px;
+    margin: 0 auto;
+    display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+   background: rgb(250, 250, 250);
+}

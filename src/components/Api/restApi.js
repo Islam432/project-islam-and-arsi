@@ -11,6 +11,14 @@ export const dataStrapi = () => {
   });
   return strapi.get("catalogs?" + query).json();
 };
+export const fetchId = (id) => {
+  const query = qs.stringify({
+    populate: {
+      Picture: true,
+    },
+  });
+  return strapi.get(`catalogs/${id}? `+ query).json();
+};
 export const SevenData = ({ start = 0, limit = 8 }) => {
   const query = qs.stringify({
     pagination: {
