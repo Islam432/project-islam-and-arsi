@@ -96,11 +96,19 @@ border-radius: 10px;
  }
  .imgblok{
     display: flex;
+
     gap: 20px;
+    margin-top: 15px;
+
  }
 
- .textblok h3 p {
-  margin-top: 90px;
+ .textblok h3  {
+padding: 10px;
+  
+ }
+ .textblok p {
+padding: 10px;
+  
  }
 
 
