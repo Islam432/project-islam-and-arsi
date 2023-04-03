@@ -23,6 +23,7 @@
   font-family: "Open Sans";
   font-size: 15px;
   font-weight: 600;
+  mix-blend-mode: screen;
 }
 .name {
   position: absolute;
@@ -39,7 +40,7 @@
   margin-top: 25px;
   max-width: 100%;
 
-  height: 250px;
+  height: 300px;
   object-fit: cover;
 }
 .footer {

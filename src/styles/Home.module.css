@@ -4,6 +4,7 @@ margin: 0;
   padding: 0;
 }
 .banner {
+  position: relative;
   border: 0.1px solid #f1eff0;
   border-bottom: white;
   background-repeat: no-repeat repeat-x;
@@ -12,17 +13,31 @@ margin: 0;
   height: 740px;
 }
 .titleobert{
+  position: absolute;
   max-width: 700px;
+  top: 150px;
+  left: 200px;
 
-margin: 0 auto;
+/* margin: 0 auto; */
 
+}
+
+@media(max-width: 580px){
+  .titleobert{
+    left: 100px;
+  }
+}
+@media(max-width: 450px){
+  .titleobert{
+    left: 50px;
+  }
 }
 .textblok {
 
   max-width: 400px;
   flex-direction: column;
   display: flex;
-  margin-top: 170px;
+  /* margin-top: 170px; */
   padding: 10px;
 }
 
@@ -91,8 +106,9 @@ margin: 0 auto;
   padding: 0;
   align-items: center;
   gap: 50px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+ 
 }
 .texblok1 {
   color: white;

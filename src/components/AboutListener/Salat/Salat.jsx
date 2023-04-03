@@ -3,7 +3,9 @@ import arsi from './Salat.module.css'
 
 const Salat = () => {
   return (
-    <div className={arsi.cont}>Salat</div>
+    <div className={arsi.cont}>
+      
+    </div>
   )
 }
 

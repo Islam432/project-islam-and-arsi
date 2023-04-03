@@ -1,0 +1,71 @@
+.card {
+  flex: 1 auto 24%;
+cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid rgb(237, 237, 237);
+  background: #ffffff;
+}
+.card:hover{
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px fuchsia;
+}
+.card header:hover{
+    transition: 0.5s;
+    text-shadow: 0px 0px 10px fuchsia;
+}
+.minHeder {
+  position: relative;
+  height: 30px;
+
+  padding: 5px;
+  max-width: 100%;
+}
+.minHeder p {
+  padding: 2px;
+
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 600;
+}
+.img_cont{
+   
+}
+.imgblok {
+  object-fit: scale-down;
+background: #ffffff;
+  width: 100%;
+}
+.name {
+  text-align: start;
+  margin-left: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.polosa {
+  border-bottom: 1px solid black;
+}
+
+.cont_price {
+    height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price{
+    margin-left: 10px;
+}
+.star_blok {
+  display: flex;
+  gap: 5px;
+}
+.star {
+  color: #ffa858;
+  font-size: 18px;
+}

@@ -7,6 +7,7 @@ import icon2 from './Icon2.png';
 import icon3 from './Photo.png';
 import styles from './Abouthome.module.css'
 import Image from "next/image";
+import Link from "next/link";
 
 
 const Abouthome = ()=>{
@@ -33,7 +34,7 @@ const Abouthome = ()=>{
             <div className={styles.iconblok} ><i className={styles.icon1}>{<GiFruitBowl/>}</i></div >
              <div className={styles.textblok}>
                   <h3>Organic Foods Only</h3>
-                  <p>
+                  <p className={styles.paragrav}>
                     Simply dummy text of the printing and typesetting industry. Lorem
                     Ipsum
                   </p>
@@ -44,7 +45,7 @@ const Abouthome = ()=>{
             <div className={styles.iconblok} ><i className={styles.icon1}>{<BsMailbox2/>}</i></div >
              <div className={styles.textblok}>
                   <h3>Quality Standards</h3>
-                  <p>
+                  <p  className={styles.paragrav}>
                   Simply dummy text of the printing and typesetting industry. Lorem Ipsum
                   </p>
              </div >
@@ -52,10 +53,15 @@ const Abouthome = ()=>{
          </div>
         </div>
 
-        <div className={styles.button1}>
-              <h3>Shop Now</h3>
+        <Link href={"/Shop"} className={styles.NavLink}>
+            <div className={styles.ButtonCatalog}>
+           
+            <h4 className={styles.htext}>go to catalog</h4>
+    
+              
               <div className={styles.arrovicon}> {<FaArrowRight />}</div>
             </div>
+            </Link>
       </div>
     </div>
   </div>
