@@ -34,7 +34,7 @@ const Shop = ({post}) => {
   return (
     <div className={styles.contshop}>
       <div className={styles.contShopHome}>
-        <p>Categories </p>
+        <p className={styles.comp}>Categories </p>
         <h3>Our Products</h3>
 
         <div className={styles.catalokblok}>

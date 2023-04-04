@@ -15,15 +15,17 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 800;
+  padding: 20px;
   font-size: clamp(15px, 2.4vw, 50px);
 }
+
 .contShopHome p {
   color: #7eb693;
-
+ 
   font-family: "Yellowtail";
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(15px, 2.4vw, 36px);
+  font-size: clamp(15px, 2.4vw, 26px);
 }
 .catalog {
   max-width: 1300px;

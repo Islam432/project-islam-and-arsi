@@ -42,10 +42,11 @@
   font-style: "SemiBold";
   font-size: clamp(20px, 3vw, 40px);
   font-weight: 800;
+  margin-left: 15px;
 }
 .cont_star {
   margin-top: 15px;
-
+margin-left: 15px;
 }
 .star {
   color: #ffa858;
@@ -60,7 +61,7 @@
   font-size: clamp(20px, 3vw, 25px);
 }
 .dis{
-    max-width: 600px;
+    max-width: 450px;
     color: #274c5b;
     margin-top: 20px;
 line-height: 30px;

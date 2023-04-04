@@ -1,5 +1,6 @@
 .card {  
    
+  
     position: relative;
     width: 280px;
     height: 415px;
@@ -22,7 +23,7 @@ max-width: 280px;
 
   .work{
    bottom: 8px;
-   left: 4px;
+   left: 8px;
     position: absolute;
 
     color: 
@@ -33,7 +34,9 @@ max-width: 280px;
     font-size: clamp(12px ,3vw , 18px);
   }
   .name{
+    padding: 8px;
     color: 
+    
     #274C5B;
     font-family: 'Roboto';
     font-weight:800 ;

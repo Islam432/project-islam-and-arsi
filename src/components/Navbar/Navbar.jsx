@@ -49,6 +49,9 @@ const Navbar = () => {
           <AiOutlineShoppingCart />
         </i>
       </div> */}
+
+
+      
     </div>
   </div>
   );
