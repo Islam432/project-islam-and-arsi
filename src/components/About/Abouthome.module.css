@@ -20,8 +20,11 @@
     width: 50%;
     /* margin-right: 100%; */
     float: right;
-    /* padding-top: 100px; */
+
+    padding-top: 100px;
+
     background: #F9F8F8;
+
   }
   
   .card_title  {

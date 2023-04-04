@@ -12,6 +12,7 @@ import Shop from "@/components/Shop_home/Shop";
 import Stata from "@/components/Stata_home/Stata";
 import ForYouHome from "@/components/ForYouHome/ForYouHome";
 import EcoFrendli from "@/components/EcoFrendli/EcoFrendli";
+import Grids from "@/components/Grids/Grids";
 
 
 
@@ -61,6 +62,7 @@ export default function Home() {
 <Stata/>
 <ForYouHome/>  
 <EcoFrendli/>
+<Grids/>
       </div>
 
 
