@@ -3,6 +3,7 @@ import styles from "./Cardinfo.module.css";
 import Image from "next/image";
 import { AiFillStar } from "react-icons/ai";
 import { FaArrowRight } from "react-icons/fa";
+import { getImageUrl } from "@/helper/image";
 const CardInfo = ({ post }) => {
   const [number, setNumber] = useState([
     { id: 1 },
@@ -11,6 +12,7 @@ const CardInfo = ({ post }) => {
     { id: 4 },
     { id: 5 },
   ]);
+  console.log(post);
   const [count, setCount] = useState({
     count: 0,
   });
@@ -25,21 +27,21 @@ const CardInfo = ({ post }) => {
   return (
     <div className={styles.cont}>
       <div className={styles.product}>
-        <div className={styles.blok}></div>
         <div className={styles.blok}>
-          <h1 className={styles.title}>Health Pistachios</h1>
+         <Image alt="" className={styles.img1} src={getImageUrl(post.data.Picture.url)} width={279} height={300}/> 
+        </div>
+        <div className={styles.blok}>
+          <h1 className={styles.title}>{post.data.Name}</h1>
           <div className={styles.cont_star}>
-            {" "}
+          
             {number.map((item) => {
               return <AiFillStar className={styles.star} key={item.id} />;
             })}
           </div>
 
-          <h3 className={styles.pr}>price</h3>
+          <h3 className={styles.pr}>{post.data.Price}</h3>
           <p className={styles.dis}>
-            Simply dummy text of the printing and typesetting industry. Lorem
-            had ceased to been the industrys standard dummy text ever since the
-            1500s, when an unknown printer took a galley.
+           {post.data.description}
           </p>
           <form className={styles.add_Cont}>
             <p className={styles.Quantity}>Quantity :</p>

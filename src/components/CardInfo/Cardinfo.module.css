@@ -1,21 +1,38 @@
 .cont {
+  max-width: 100%;
+  margin: 0;
+  padding: 10px;
 }
-
 .product {
-  border: 1px solid black;
+  border:1px solid #274c5b;
+  border-radius: 20px;
   max-width: 1200px;
-  padding: 20px;
+  
   margin: 30px auto;
   display: flex;
+  
 
   justify-content: center;
   gap: 20px;
 }
+.blok:nth-child(1){
+  border:1px solid #274c5b;
+  border-radius: 20px;
+ box-shadow: 5px 0px 5px 0px rgb(215, 215, 215);
+  
+}
+.blok:nth-child(2){
+
+ 
+  
+}
+
+
 .blok {
   padding: 10px;
-  border: 1px solid red;
+
   width: 50%;
-  height: 500px;
+ 
 }
 
 .title {
@@ -28,7 +45,7 @@
 }
 .cont_star {
   margin-top: 15px;
-  border: 1px solid black;
+
 }
 .star {
   color: #ffa858;
@@ -36,7 +53,7 @@
 }
 .pr {
     color: #274c5b;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 18px;
   font-family: "Open Sans";
   font-style: "Bold";
@@ -45,7 +62,7 @@
 .dis{
     max-width: 600px;
     color: #274c5b;
-    margin-top: 10px;
+    margin-top: 20px;
 line-height: 30px;
     margin-left: 18px;
     font-family: "Open Sans";
@@ -53,7 +70,8 @@ line-height: 30px;
     font-size: clamp(12px, 2vw, 18px);
 }
 .add_Cont{
-    margin-top: 50px;
+  line-height: 50px;
+    margin-top: 130px;
     display: flex;
     align-items: center;
   gap: 20px;
@@ -98,12 +116,7 @@ line-height: 30px;
   
     gap: 5px;
   }
-  @media (max-width: 500px) {
-    .ButtonCatalog {
-      width: 140px;
-      height: 50px;
-    }
-  }
+
   .htext {
     padding-left: 10px;
     font-family: Roboto;
@@ -126,4 +139,40 @@ line-height: 30px;
     background: #335b6b;
     color: white;
   }
-  
+  .img1{
+width: 100%;
+height: 100%;
+
+object-fit: scale-down;
+  }
+  @media (max-width: 700px) {
+
+  .blok{
+    width: 100%;
+  }
+  .add_Cont{
+    flex-wrap: wrap;
+  }
+  }
+  @media (max-width: 500px) {
+    .ButtonCatalog {
+      width: 140px;
+      height: 50px;
+    }
+    .blok:nth-child(1){
+      display: none;
+       
+      
+   }
+    .add_Cont{
+      margin: 130px auto;
+    }
+    .input{
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 451px) {
+ .Quantity{
+  display: none;
+ }
+  }

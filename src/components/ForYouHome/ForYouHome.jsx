@@ -45,6 +45,7 @@ const ForYouHome = () => {
                   price={item.Price}
                   type={item.Type}
                   img={getImageUrl(item.Picture.url)}
+                  id={item.id}
                 />
               );
             })}

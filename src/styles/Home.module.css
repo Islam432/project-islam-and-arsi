@@ -10,6 +10,7 @@ margin: 0;
   background-repeat: no-repeat repeat-x;
   background: url("./Banner.jpg");
   background-size: cover;
+  background-position:center ;
   height: 740px;
 }
 .titleobert{
