@@ -27,8 +27,8 @@ const Navbar = () => {
         <Link href={"/Shop"} className={styles.NavLink}>
           <h3>Shop</h3>
         </Link>
-        <Link href={"/comp"} className={styles.NavLink}>
-          <h3>Navbar</h3>
+        <Link href={"/People"} className={styles.NavLink}>
+          <h3>Team</h3>
         </Link>
       </nav>
 
@@ -44,11 +44,11 @@ const Navbar = () => {
         />
       </form>
 
-      <div className={styles.basket}>
+      {/* <div className={styles.basket}>
         <i className={styles.iconbasket}>
           <AiOutlineShoppingCart />
         </i>
-      </div>
+      </div> */}
     </div>
   </div>
   );

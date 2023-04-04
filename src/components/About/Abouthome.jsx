@@ -19,10 +19,10 @@ const Abouthome = ()=>{
       <Image className={styles.img} src={icon3} alt=""/>
       <div className={styles.card}>
         <div className={styles.about}>
-          <h2>about us</h2>
+          <h2  className={styles.h2}>about us</h2>
         </div>
         <div className={styles.card_title}>
-          <h1>We Believe in Working Accredited Farmers</h1>
+          <h1 className={styles.h1}>We Believe in Working Accredited Farmers</h1>
         </div>
         <div className={styles.card_desc}>
           Simply dummy text of the printing and typesetting industry. Lorem had

@@ -17,7 +17,7 @@ export const fetchId = (id) => {
       Picture: true,
     },
   });
-  return strapi.get(`catalogs/${id}? `+ query).json();
+  return strapi.get(`catalogs/${id}?` + query).json();
 };
 export const SevenData = ({ start = 0, limit = 8 }) => {
   const query = qs.stringify({
@@ -60,6 +60,20 @@ export const WigData = () => {
 
 export const DataPeople = () => {
   const query = qs.stringify({
+    pagination: {
+      page: 1,
+      pageSize: 3,
+    },
+    populate: {
+      image: true,
+    },
+  });
+
+  return strapi.get("peoplee?" + query).json();
+};
+export const DataPeopleAll = () => {
+  const query = qs.stringify({
+
     populate: {
       image: true,
     },

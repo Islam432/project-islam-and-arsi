@@ -7,7 +7,7 @@ import { dataStrapi, SevenData, ToData } from "../Api/restApi";
 import { getImageUrl } from "@/helper/image";
 import Card from "../UI/Card/Card";
 
-const Shop = () => {
+const Shop = ({post}) => {
   const { visible, setViseble } = useState(false);
   const [catalog, setcatalog] = useState([]);
   const [paginate, setPaginate] = useState({ limit: 8, start: 0 });
@@ -23,7 +23,7 @@ const Shop = () => {
     SevenData({ start: paginate.limit, limit: 4 }).then((res) => {
       return setcatalog((prev) => [...prev, ...res.data]);
     });
-    consolea.log(prev)
+
   
     setPaginate((prev) => ({
       limit: paginate.limit + 4,
@@ -47,6 +47,7 @@ const Shop = () => {
                   price={item.Price}
                   type={item.Type}
                   img={getImageUrl(item.Picture.url)}
+                  id={item.id}
                 />
               );
             })}
@@ -62,3 +63,15 @@ const Shop = () => {
 };
 
 export default Shop;
+
+// export async function getServerSideProps({ params: {id}} ){
+//   const post = await SevenData(id)
+
+//   return{
+// props: {
+// post: post || null, 
+// },
+//   };
+
+ 
+// }
